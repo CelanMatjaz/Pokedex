@@ -1,0 +1,34 @@
+.Pokemon-Ability {
+  background-color: white;
+  padding: 20px;
+}
+
+.Pokemon-Ability-Stat {
+  border: 1px solid #313131;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.Pokemon-Ability-Stat-Pokemon {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Pokemon-Ability-Stat-Pokemon-Item {
+  padding: 10px;
+}
+
+.Pokemon-Ability-Stat-Pokemon-Item-Text {
+  text-align: center;
+}
+
+.Pokemon-Ability-Stat-Text {
+  text-align: left;
+}
+
+.Pokemon-Ability-Show-Pokemon-Button {
+  border-radius: 4px;
+  margin-bottom: 10px;
+}

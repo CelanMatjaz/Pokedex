@@ -1,0 +1,143 @@
+.Pokemon-List {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+
+.Pokemon-Item {
+  justify-self: stretch;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  box-shadow: 2px 2px 2px #a5a5a5;
+  transition: all 0.2s;
+}
+
+.Pokemon-Item:hover {
+  transform: scaleX(1.05) scaleY(1.05);
+}
+
+.Pokemon-Item-Remove-Button {
+  border-radius: 4px;
+}
+
+.Pokemon-Item-Container {
+  padding: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+.Pokemon-Item-Name,
+.Pokemon-Item-Image {
+  text-align: center;
+}
+
+.Pokemon-List-Buttons {
+  margin-bottom: 30px;
+}
+
+.Pokemon-List-Buttons > button {
+  border: none;
+  color: white;
+  background-color: dodgerblue;
+  padding: 10px;
+  font-size: 18px;
+  outline: none;
+}
+
+.Pokemon-List-Buttons > button:hover {
+  background-color: rgb(81, 168, 255);
+}
+
+.Pokemon-List-Buttons > button:last-child {
+  border-radius: 0 5px 5px 0;
+}
+
+.Pokemon-List-Buttons > button:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+.Pokemon-List-Buttons > button:nth-child(2) {
+  border: 1px solid rgb(224, 224, 224);
+  border-top: none;
+  border-bottom: none;
+}
+
+.Pokemon-Search {
+  display: inline-flex;
+  align-items: center;
+  justify-self: right;
+  margin-bottom: 18px;
+}
+
+.Pokemon-Search > input[type='text'] {
+  padding: 8px 14px;
+  border: none;
+  background-color: #313131;
+  color: rgb(255, 255, 255);
+  border-radius: 15px;
+  outline: none;
+  margin-right: 10px;
+}
+
+.Pokemon-Search > input[type='text']::placeholder {
+  color: rgb(207, 207, 207);
+}
+
+.Pokemon-Search > button {
+  padding: 8px 14px;
+  border: none;
+  background-color: #313131;
+  color: rgb(255, 255, 255);
+  border-radius: 15px;
+  outline: none;
+}
+
+.Pokemon-List-Number {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  .Pokemon-List {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .Pokemon-List-Buttons {
+    text-align: center;
+  }
+
+  .Pokemon-Search {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Pokemon-List {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+  }
+
+  .Pokemon-List > a {
+    margin: 0 auto;
+  }
+
+  .Pokemon-Item {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .Pokemon-List {
+    min-width: 0;
+  }
+
+  .Pokemon-Item {
+    margin: 0;
+    width: 100%;
+  }
+}

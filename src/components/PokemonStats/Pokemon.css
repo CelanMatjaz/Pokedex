@@ -1,0 +1,68 @@
+.Pokemon-Stats {
+  background-color: white;
+  padding: 20px;
+}
+
+.Pokemon-Summary {
+  display: flex;
+  align-items: center;
+}
+
+.Pokemon-Summary-Name {
+  font-size: 26px;
+}
+
+.Pokemon-Moves {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Pokemon-Moves-List-Item {
+  margin: 4px 4px 4px 0;
+  border: 1px solid #313131;
+  border-radius: 6px;
+}
+
+.Pokemon-Moves-List-Item > a {
+  padding: 10px;
+  display: block;
+}
+
+.Pokemon-Summary-Add-Button {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 4px;
+  vertical-align: bottom;
+}
+
+.Pokemon-Abilities-Item {
+  padding: 10px;
+  border: 2px solid gray;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+.Pokemon-Abilities-Item a {
+  display: block;
+}
+
+.Pokemon-Moves-Button {
+  padding: 6px;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 500px) {
+  .Pokemon-Summary {
+    display: block;
+  }
+
+  .Pokemon-Summary-Container {
+    margin-bottom: 30px;
+  }
+
+  .Pokemon-Moves {
+    justify-content: center;
+  }
+}
